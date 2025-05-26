@@ -1,5 +1,11 @@
 import { ArrowRight, ExternalLink, Github, Key } from 'lucide-react';
 import React from 'react'
+import project2 from '../projects/project2.png';
+import project3 from '../projects/project3.png';
+import project4 from '../projects/project4.png';
+import project5 from '../projects/project5.png';
+import project1 from '../projects/project1.png'
+
 
 export default function Projects() {
 
@@ -8,7 +14,7 @@ export default function Projects() {
             id: 1,
             title: "Social Media Website",
             description: "This is a modern social media application built with React.js for the frontend and Firebase for backend services including Firestore Database, Authentication, and Storage. Users can create posts, like/dislike content, and interact in real time with a seamless user experience.",
-            image: "/src/projects/project2.png",
+            image: project2,
             tags: ["React","Firebase"],
             githubUrl: "https://github.com/Tharindu-Theekshana/Firebase-Social-Media-Project"
         },
@@ -16,7 +22,7 @@ export default function Projects() {
             id: 2,
             title: "User Management System",
             description: "Full-stack web application that allows administrators to perform Create, Read, Update, and Delete (CRUD) operations on user data.The frontend is built with React.js, while the backend is powered by Spring Boot, exposing RESTful APIs.",
-            image: "src/projects/project3.png",
+            image: project3,
             tags: ["React","Spring Boot","MySQL"],
             githubUrl: "https://github.com/Tharindu-Theekshana/User-Management-System"
         },
@@ -24,7 +30,7 @@ export default function Projects() {
             id: 3,
             title: "User Login System",
             description: "Full-stack web application features a secure user authentication and management system that implements JWT (JSON Web Token) for secure, stateless user sessions and The system supports role-based access, providing separate dashboards for Admin and User roles.",
-            image: "/src/projects/project4.png",
+            image: project4,
             tags: ["React","Spring Boot","MySQL"],
             githubUrl: "https://github.com/Tharindu-Theekshana/User-Login-System"
         },
@@ -32,7 +38,7 @@ export default function Projects() {
             id: 4,
             title: "Gym Portal",
             description: "The FitZone Gym Portal is a fully responsive web application designed to manage gym operations and enhance user interaction. Built using PHP for backend logic, HTML/CSS/JavaScript for a dynamic frontend, and MySQL for database management.",
-            image: "/src/projects/project1.png",
+            image: project1,
             tags: ["HTML/CSS","JavaScript","PHP","MySQL"],
             githubUrl: "https://github.com/Tharindu-Theekshana/FitZone-Gym-Portal"
         },
@@ -40,7 +46,7 @@ export default function Projects() {
             id: 5,
             title: "Android Booking App",
             description: "This is a native Android application developed in Java, designed for LuxeVista Resort to allow guests to easily browse and book rooms, reserve services, and manage their bookings and Explore resort and Offers.",
-            image: "/src/projects/project5.png",
+            image: project5,
             tags: ["Java","SQLlite"],
             githubUrl: "https://github.com/Tharindu-Theekshana/LuxeVista-Android-BookingApp"
         },
