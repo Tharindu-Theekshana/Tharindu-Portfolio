@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 import HeroSection from '../components/HeroSection'
 import About from '../components/About'
 import Skills from '../components/Skills'
+import Projects from '../components/Projects'
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         <HeroSection/>
         <About/>
         <Skills/>
+        <Projects/>
       </main>
       
     </div>
