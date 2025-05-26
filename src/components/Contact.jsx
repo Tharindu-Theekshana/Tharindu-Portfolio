@@ -3,7 +3,12 @@ import React, { useState } from 'react'
 import { cn } from '../lib/utils'
 import { useToast } from '../hooks/use-toast'
 import emailjs from 'emailjs-com'
-import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from './config'
+
+
+const serviceId = import.meta.env.VITE_SERVICE_ID;
+const templateId = import.meta.env.VITE_TEMPLATE_ID ;
+const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+
 
 export default function Contact() {
 
@@ -18,11 +23,11 @@ export default function Contact() {
     });
 
     const handleSubmit = (e) => {
+
       e.preventDefault();
       setIsSubmitting(true);
-      
 
-      emailjs.sendForm(SERVICE_ID,TEMPLATE_ID, e.target,PUBLIC_KEY).then((result)=> {
+      emailjs.sendForm(serviceId,templateId, e.target,publicKey).then((result)=> {
         setTimeout(()=> {
             toast({
                 title: "Message sent!",
@@ -32,14 +37,15 @@ export default function Contact() {
           }, 1500);
           setFormData({name: "", email: "", message: ""})
       })
-      .catch(() => 
+      .catch((error) => {
+        console.error("EmailJS error:", error);
       setTimeout(()=> {
         toast({
             title: "Oops Something went wrong. Please try again.",
             
         });
         setIsSubmitting(false);
-      }, 1500));
+      }, 1500)});
       
 
       
