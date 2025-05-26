@@ -26,6 +26,7 @@ export default function Contact() {
 
       e.preventDefault();
       setIsSubmitting(true);
+    
 
       emailjs.sendForm(serviceId,templateId, e.target,publicKey).then((result)=> {
         setTimeout(()=> {
@@ -38,7 +39,7 @@ export default function Contact() {
           setFormData({name: "", email: "", message: ""})
       })
       .catch((error) => {
-        console.error("EmailJS error:", error);
+        
       setTimeout(()=> {
         toast({
             title: "Oops Something went wrong. Please try again.",
