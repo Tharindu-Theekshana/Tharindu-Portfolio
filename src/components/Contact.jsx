@@ -2,6 +2,8 @@ import { Instagram, Linkedin, Mail, MapPin, Phone, Send, Twitter } from 'lucide-
 import React, { useState } from 'react'
 import { cn } from '../lib/utils'
 import { useToast } from '../hooks/use-toast'
+import emailjs from 'emailjs-com'
+import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from './config'
 
 export default function Contact() {
 
@@ -9,17 +11,38 @@ export default function Contact() {
 
     const [isSubmitting, setIsSubmitting] = useState(false);
 
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: ""
+    });
+
     const handleSubmit = (e) => {
       e.preventDefault();
       setIsSubmitting(true);
+      
 
+      emailjs.sendForm(SERVICE_ID,TEMPLATE_ID, e.target,PUBLIC_KEY).then((result)=> {
+        setTimeout(()=> {
+            toast({
+                title: "Message sent!",
+                description: "Thank you for your message. I'll get back to you soon."
+            });
+            setIsSubmitting(false);
+          }, 1500);
+          setFormData({name: "", email: "", message: ""})
+      })
+      .catch(() => 
       setTimeout(()=> {
         toast({
-            title: "Message sent!",
-            description: "Thank you for your message. I'll get back to you soon."
+            title: "Oops Something went wrong. Please try again.",
+            
         });
         setIsSubmitting(false);
-      }, 1500);
+      }, 1500));
+      
+
+      
     }
 
   return (
@@ -87,15 +110,15 @@ export default function Contact() {
 
         <form className='space-y-6' onSubmit={handleSubmit}>
             <label htmlFor="name" className='block text-sm font-medium mb-2'>Your Name</label>
-            <input type="text" id='name' name='name' required 
+            <input type="text" id='name' name='name' value={formData.name} onChange={(e)=>setFormData({...formData, name: e.target.value})} required 
             className='w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary'
             placeholder='Jonathan Andrew...'/>
             <label htmlFor="email" className='block text-sm font-medium mb-2'>Your Email</label>
-            <input type="email" id='email' name='email' required 
+            <input type="email" id='email' name='email' value={formData.email} onChange={(e)=>setFormData({...formData, email: e.target.value})} required 
             className='w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary'
             placeholder='jonathan@gmail.com...'/>
             <label htmlFor="message" className='block text-sm font-medium mb-2'>Your Message</label>
-            <textarea  id='message' name='message' required 
+            <textarea  id='message' name='message' value={formData.message} onChange={(e)=>setFormData({...formData, message: e.target.value})} required 
             className='w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none'
             placeholder="Hello, I'd like to talk about..."/>
             <button type='submit' disabled={isSubmitting} className={cn("cosmic-button w-full flex items-center justify-center gap-2",
