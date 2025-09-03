@@ -15,54 +15,14 @@ export default function Projects() {
     const projects = [
         {
             id: 1,
-            title: "Social Media Website",
-            description: "This is a modern social media application built with React.js for the frontend and Firebase for backend services including Firestore Database, Authentication, and Storage. Users can create posts, like/dislike content, and interact in real time with a seamless user experience.",
-            image: project2,
-            tags: ["React","Firebase"],
-            githubUrl: "https://github.com/Tharindu-Theekshana/Firebase-Social-Media-Project"
+            title: "Service Providing Platform",
+            description: "LocalFix is a web-based platform that connects customers with skilled local workers such as plumbers, electricians, and masons. It features secure booking management, verified worker profiles, and transparent review systems to build trust and reliability. The system is built using React (frontend), Spring Boot (backend), and MySQL (database) for a modern, scalable, and user-friendly solution.",
+            image: project8,
+            tags: ["React","Spring Boot","MySQL","Tailwind CSS"],
+            githubUrl: "https://github.com/Tharindu-Theekshana/LocalFix-Frontend"
         },
         {
             id: 2,
-            title: "User Management System",
-            description: "Full-stack web application that allows administrators to perform Create, Read, Update, and Delete (CRUD) operations on user data.The frontend is built with React.js, while the backend is powered by Spring Boot, exposing RESTful APIs.",
-            image: project3,
-            tags: ["React","Spring Boot","MySQL"],
-            githubUrl: "https://github.com/Tharindu-Theekshana/User-Management-System"
-        },
-        {
-            id: 3,
-            title: "User Login System",
-            description: "Full-stack web application features a secure user authentication and management system that implements JWT (JSON Web Token) for secure, stateless user sessions and The system supports role-based access, providing separate dashboards for Admin and User roles.",
-            image: project4,
-            tags: ["React","Spring Boot","MySQL"],
-            githubUrl: "https://github.com/Tharindu-Theekshana/User-Login-System"
-        },
-        {
-            id: 4,
-            title: "Gym Portal",
-            description: "The FitZone Gym Portal is a fully responsive web application designed to manage gym operations and enhance user interaction. Built using PHP for backend logic, HTML/CSS/JavaScript for a dynamic frontend, and MySQL for database management.",
-            image: project1,
-            tags: ["HTML/CSS","JavaScript","PHP","MySQL"],
-            githubUrl: "https://github.com/Tharindu-Theekshana/FitZone-Gym-Portal"
-        },
-        {
-            id: 5,
-            title: "Android Booking App",
-            description: "This is a native Android application developed in Java, designed for LuxeVista Resort to allow guests to easily browse and book rooms, reserve services, and manage their bookings and Explore resort and Offers.",
-            image: project5,
-            tags: ["Java","SQLlite"],
-            githubUrl: "https://github.com/Tharindu-Theekshana/LuxeVista-Android-BookingApp"
-        },
-        {
-            id: 6,
-            title: "E-commerce Website",
-            description: "GadgetHub is a responsive e-commerce platform developed using ASP.NET Core, React, and MySQL. It enables users to browse gadgets, request quotations from multiple distributors, and manage orders seamlessly. The system highlights secure authentication, efficient order management, and a scalable architecture for real-world applications.",
-            image: project6,
-            tags: ["ASP.NET","Reat","MySql","Tailwind CSS"],
-            githubUrl: "https://github.com/Tharindu-Theekshana/GadgetHub-ASP.NET-Backend"
-        },
-        {
-            id: 7,
             title: "Event Booking and Management System",
             description: "Evenza is a responsive event management system built with TypeScript + React, Spring Boot, and MySQL. It supports three user roles: customers, organizers, and admins . The platform enhances event handling with features like ticket refunds and a seamless, user-friendly interface across all devices.",
             image: project7,
@@ -70,13 +30,58 @@ export default function Projects() {
             githubUrl: "https://github.com/Tharindu-Theekshana/Evenza-Event-Management-System"
         },
         {
-            id: 8,
-            title: "Service Providing Platform",
-            description: "LocalFix is a web-based platform that connects customers with skilled local workers such as plumbers, electricians, and masons. It features secure booking management, verified worker profiles, and transparent review systems to build trust and reliability. The system is built using React (frontend), Spring Boot (backend), and MySQL (database) for a modern, scalable, and user-friendly solution.",
-            image: project8,
-            tags: ["React","Spring Boot","MySQL","Tailwind CSS"],
-            githubUrl: "https://github.com/Tharindu-Theekshana/LocalFix-Frontend"
+            id: 3,
+            title: "E-commerce Website",
+            description: "GadgetHub is a responsive e-commerce platform developed using ASP.NET Core, React, and MySQL. It enables users to browse gadgets, request quotations from multiple distributors, and manage orders seamlessly. The system highlights secure authentication, efficient order management, and a scalable architecture for real-world applications.",
+            image: project6,
+            tags: ["ASP.NET","Reat","MySql","Tailwind CSS"],
+            githubUrl: "https://github.com/Tharindu-Theekshana/GadgetHub-ASP.NET-Backend"
         },
+        {
+            id: 4,
+            title: "Android Booking App",
+            description: "This is a native Android application developed in Java, designed for LuxeVista Resort to allow guests to easily browse and book rooms, reserve services, and manage their bookings and Explore resort and Offers.",
+            image: project5,
+            tags: ["Java","SQLlite"],
+            githubUrl: "https://github.com/Tharindu-Theekshana/LuxeVista-Android-BookingApp"
+        },
+        {
+            id: 5,
+            title: "Gym Portal",
+            description: "The FitZone Gym Portal is a fully responsive web application designed to manage gym operations and enhance user interaction. Built using PHP for backend logic, HTML/CSS/JavaScript for a dynamic frontend, and MySQL for database management.",
+            image: project1,
+            tags: ["HTML/CSS","JavaScript","PHP","MySQL"],
+            githubUrl: "https://github.com/Tharindu-Theekshana/FitZone-Gym-Portal"
+        },
+        {
+            id: 6,
+            title: "Social Media Website",
+            description: "This is a modern social media application built with React.js for the frontend and Firebase for backend services including Firestore Database, Authentication, and Storage. Users can create posts, like/dislike content, and interact in real time with a seamless user experience.",
+            image: project2,
+            tags: ["React","Firebase"],
+            githubUrl: "https://github.com/Tharindu-Theekshana/Firebase-Social-Media-Project"
+        },
+        {
+            id: 7,
+            title: "User Management System",
+            description: "Full-stack web application that allows administrators to perform Create, Read, Update, and Delete (CRUD) operations on user data.The frontend is built with React.js, while the backend is powered by Spring Boot, exposing RESTful APIs.",
+            image: project3,
+            tags: ["React","Spring Boot","MySQL"],
+            githubUrl: "https://github.com/Tharindu-Theekshana/User-Management-System"
+        },
+        {
+            id: 8,
+            title: "User Login System",
+            description: "Full-stack web application features a secure user authentication and management system that implements JWT (JSON Web Token) for secure, stateless user sessions and The system supports role-based access, providing separate dashboards for Admin and User roles.",
+            image: project4,
+            tags: ["React","Spring Boot","MySQL"],
+            githubUrl: "https://github.com/Tharindu-Theekshana/User-Login-System"
+        },
+        
+       
+        
+        
+        
 ];
 
   return (
