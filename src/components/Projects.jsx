@@ -7,6 +7,7 @@ import project5 from '../projects/project5.png';
 import project1 from '../projects/project1.png';
 import project6 from '../projects/project6.png';
 import project7 from '../projects/project7.png';
+import project8 from '../projects/project8.png';
 
 
 export default function Projects() {
@@ -57,7 +58,7 @@ export default function Projects() {
             title: "E-commerce Website",
             description: "GadgetHub is a responsive e-commerce platform developed using ASP.NET Core, React, and MySQL. It enables users to browse gadgets, request quotations from multiple distributors, and manage orders seamlessly. The system highlights secure authentication, efficient order management, and a scalable architecture for real-world applications.",
             image: project6,
-            tags: ["ASP.NET","Reat","MySql"],
+            tags: ["ASP.NET","Reat","MySql","Tailwind CSS"],
             githubUrl: "https://github.com/Tharindu-Theekshana/GadgetHub-ASP.NET-Backend"
         },
         {
@@ -65,16 +66,16 @@ export default function Projects() {
             title: "Event Booking and Management System",
             description: "Evenza is a responsive event management system built with TypeScript + React, Spring Boot, and MySQL. It supports three user roles: customers, organizers, and admins . The platform enhances event handling with features like ticket refunds and a seamless, user-friendly interface across all devices.",
             image: project7,
-            tags: ["React","TypeScript","Spring Boot","MySQL"],
+            tags: ["React","TypeScript","Spring Boot","MySQL","Tailwind CSS"],
             githubUrl: "https://github.com/Tharindu-Theekshana/Evenza-Event-Management-System"
         },
         {
             id: 8,
-            title: "Android Booking App",
-            description: "This is a native Android application developed in Java, designed for LuxeVista Resort to allow guests to easily browse and book rooms, reserve services, and manage their bookings and Explore resort and Offers.",
-            image: project5,
-            tags: ["Java","SQLlite"],
-            githubUrl: "https://github.com/Tharindu-Theekshana/LuxeVista-Android-BookingApp"
+            title: "Service Providing Platform",
+            description: "LocalFix is a web-based platform that connects customers with skilled local workers such as plumbers, electricians, and masons. It features secure booking management, verified worker profiles, and transparent review systems to build trust and reliability. The system is built using React (frontend), Spring Boot (backend), and MySQL (database) for a modern, scalable, and user-friendly solution.",
+            image: project8,
+            tags: ["React","Spring Boot","MySQL","Tailwind CSS"],
+            githubUrl: "https://github.com/Tharindu-Theekshana/LocalFix-Frontend"
         },
 ];
 
