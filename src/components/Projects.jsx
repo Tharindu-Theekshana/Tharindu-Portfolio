@@ -4,7 +4,9 @@ import project2 from '../projects/project2.png';
 import project3 from '../projects/project3.png';
 import project4 from '../projects/project4.png';
 import project5 from '../projects/project5.png';
-import project1 from '../projects/project1.png'
+import project1 from '../projects/project1.png';
+import project6 from '../projects/project6.png';
+import project7 from '../projects/project7.png';
 
 
 export default function Projects() {
@@ -44,6 +46,30 @@ export default function Projects() {
         },
         {
             id: 5,
+            title: "Android Booking App",
+            description: "This is a native Android application developed in Java, designed for LuxeVista Resort to allow guests to easily browse and book rooms, reserve services, and manage their bookings and Explore resort and Offers.",
+            image: project5,
+            tags: ["Java","SQLlite"],
+            githubUrl: "https://github.com/Tharindu-Theekshana/LuxeVista-Android-BookingApp"
+        },
+        {
+            id: 6,
+            title: "E-commerce Website",
+            description: "GadgetHub is a responsive e-commerce platform developed using ASP.NET Core, React, and MySQL. It enables users to browse gadgets, request quotations from multiple distributors, and manage orders seamlessly. The system highlights secure authentication, efficient order management, and a scalable architecture for real-world applications.",
+            image: project6,
+            tags: ["ASP.NET","Reat","MySql"],
+            githubUrl: "https://github.com/Tharindu-Theekshana/GadgetHub-ASP.NET-Backend"
+        },
+        {
+            id: 7,
+            title: "Event Booking and Management System",
+            description: "Evenza is a responsive event management system built with TypeScript + React, Spring Boot, and MySQL. It supports three user roles: customers, organizers, and admins . The platform enhances event handling with features like ticket refunds and a seamless, user-friendly interface across all devices.",
+            image: project7,
+            tags: ["React","TypeScript","Spring Boot","MySQL"],
+            githubUrl: "https://github.com/Tharindu-Theekshana/Evenza-Event-Management-System"
+        },
+        {
+            id: 8,
             title: "Android Booking App",
             description: "This is a native Android application developed in Java, designed for LuxeVista Resort to allow guests to easily browse and book rooms, reserve services, and manage their bookings and Explore resort and Offers.",
             image: project5,
